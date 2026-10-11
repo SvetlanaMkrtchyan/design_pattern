@@ -41,9 +41,7 @@ int main() {
     Leaf* leaf1 = new Leaf("Leaf 1");
     Leaf* leaf2 = new Leaf("Leaf 2");
     Composite* composite1 = new Composite("Composite 1");
-    Leaf* leaf3 = new Leaf("Leaf 3");
 
-    composite1->add(leaf3);
     root->add(leaf1);
     root->add(leaf2);
     root->add(composite1);
@@ -52,7 +50,6 @@ int main() {
 
     delete leaf1;
     delete leaf2;
-    delete leaf3;
     delete composite1;
     delete root;
 
